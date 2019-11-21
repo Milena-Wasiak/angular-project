@@ -1,0 +1,13 @@
+<h1>Photos List</h1>
+<section>
+  <photo-pagination (selectedPage)="selectPhotos($event)"></photo-pagination>
+</section>
+<section>
+  <ul *ngIf="photos">
+    <li *ngFor="let photo of photos">
+      <div class="photo-card">
+          <photos-card [photo]="photo"></photos-card>
+      </div>
+    </li>
+  </ul>
+</section>

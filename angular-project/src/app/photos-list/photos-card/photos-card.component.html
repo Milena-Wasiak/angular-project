@@ -1,0 +1,14 @@
+<div class="photo-card-img" [ngStyle]="{'background-image': 'url(' + photo.download_url + ')'}">
+  <div class="photo-card-details">
+      <h3>{{ photo.author }}</h3>
+      <p>#{{ photo.id }}</p>
+      <div class="photo-card-details-props">
+        <p>height: </p>
+        <p>{{ photo.height }} px</p>
+        <p>width: </p>
+        <p>{{ photo.width }} px</p>
+      </div>
+      <p><a [href]="photo.download_url">Download</a></p>
+      <p><a [href]="photo.url">Source</a></p>
+  </div>
+</div>
